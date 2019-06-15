@@ -7,13 +7,21 @@ public class Encrypt {
     }
 
     public String getmName() {
-        return "a";
+        return mName;
     }
 
     public Encrypt(String name, int key){
         mName = name;
         mKey = key;
     }
+    public String Encrypt(){
+        String result = "";
+        for (int i= 0; i<mName.length(); i++) {
+            char ch = mName.charAt(i);
+            char shifted = (char) (ch + mKey);
+            result += shifted;
+        }
+        return result;
+        }
+    }
 
-
-}
