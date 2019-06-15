@@ -1,11 +1,39 @@
-import java.io.Console;
+import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
-        Console myConsole = System.console();
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Welcome to Ceaser Cipher. Give me a word");
-        String yourWord = myConsole.readLine();
-        System.out.println("Good. Now give me a key");
+        System.out.println(" What do you want to do?\n 1. Encode \n 2. Decode  \n 3. Quit");
+        int choice = scanner.nextInt();
+        scanner.nextLine(); //throw away the \n not consumed by nextInt()
+
+        if(choice == 1)
+        {
+            System.out.println("Enter a text");
+            String inputText = scanner.nextLine().toUpperCase();
+            System.out.println("Enter a key. A number by which your word is encrypted.");
+            int key = scanner.nextInt();
+            Encrypt encoding = new Encrypt(inputText,key);
+            System.out.println(String.format("Your encrypted text is:  %s",encoding.Encrypt()));
+
+        }
+        else if(choice == 2)
+        {
+            System.out.println("Enter an encrypted text to decrypt");
+            String inputText = scanner.nextLine().toUpperCase();
+            System.out.println("Enter a key ");
+            int key = scanner.nextInt();
+            Decrypt decoding = new Decrypt(inputText, key);
+            System.out.println(String.format("Your decrypted text is:  %s",decoding.Decrypt()));
+        }
+        else if(choice == 3)
+        {
+            System.exit(0);
+        }
+        else
+        {
+            System.out.println("Input not known");
+        }
     }
 }
