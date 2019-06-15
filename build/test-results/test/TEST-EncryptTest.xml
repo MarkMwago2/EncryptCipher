@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="EncryptTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-06-15T09:49:43" hostname="mark-HP-Laptop-15-bs1xx" time="0.001">
+  <properties/>
+  <testcase name="Encrypt_acceptsaString" classname="EncryptTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
