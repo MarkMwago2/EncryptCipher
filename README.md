@@ -21,6 +21,7 @@ There are no known bugs.
 This app has been developed in Java.
 
 **BDD**
+
 The app asks the user to choose whether to encrypt or decrypt text.
 It then invites them to input text
 Which is then encrypted or decrypted.
