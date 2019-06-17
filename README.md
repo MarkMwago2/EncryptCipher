@@ -33,7 +33,10 @@ You can reach me at markmwago@gmail.com
 **License**
 
 MIT Copyright (c) {2019} MarkMwago
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> b2fa8554cd9460408bc76b44758a5fc60a991c57
